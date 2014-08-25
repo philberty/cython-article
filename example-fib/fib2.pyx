@@ -7,6 +7,6 @@ cdef fib(int n):
         return fib(n-1) + fib(n-2)
 
 result = []
-for i in range (10):
+for i in range (30):
     result.append(('fib(%i)' % i, fib(i)))
 print result
