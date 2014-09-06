@@ -9,7 +9,7 @@ cpdef getBackendData():
     return {'name': resp.name, 'value': resp.value}
 
 from flask import Flask, jsonify
-app = Flask ('myapp')
+app = Flask (__name__)
 
 @app.route("/")
 def index ():
